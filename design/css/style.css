@@ -1,0 +1,78 @@
+/*Universal Style*/
+*{
+    font-family: 'Barlow Semi Condensed';
+    font-size: 13px;
+}
+
+/*Use for tablet and desktop*/
+@media only screen and (min-width:768px) and (max-width:1440px){
+    .container{
+        border: 1px solid red;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(4,150fr);
+        grid-template-rows: repeat(2,300px);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+    }
+    .tag-review-danielclifford{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        border: 1px solid red;
+    }
+    .tag-review-jonathanwalter{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        border: 1px solid red;
+    }
+    .tag-review-kirawhittle{
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        border: 1px solid red;
+    }
+    .tag-review-jeanetteharmon{
+        border: 1px solid red;
+    }
+    .tag-review-patrickabrams{
+        grid-column-start: 2;
+        grid-column-end: 4;
+        border: 1px solid red;
+    }
+}
+/*Use for mobile*/
+@media only screen and (min-width:280px) and (max-width:435px){
+    .container{
+        border: 1px solid red;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(1,150fr);
+        grid-template-rows: repeat(8,150px);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+    }
+    .tag-review-danielclifford{
+        grid-row-start: 1;
+        grid-row-end: 3;
+        border: 1px solid red;
+    }
+    .tag-review-jonathanwalter{
+
+        border: 1px solid red;
+    }
+    .tag-review-kirawhittle{
+        grid-row-start: 7;
+        grid-row-end: 9;
+        border: 1px solid red;
+    }
+    .tag-review-jeanetteharmon{
+        grid-row-start: 4;
+        grid-row-end: 5;
+        border: 1px solid red;
+    }
+    .tag-review-patrickabrams{
+
+        border: 1px solid red;
+    }
+}
